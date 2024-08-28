@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    
+  </head>
+  <body class="body">
+    <header class="logo_header">
+      <img src="./img/logoalura.png" alt="logo alura" >
+    </header>
+    <main class="main">
+      <div class="encriptar">
+        <textarea name="texto" class="texto" id="texto" cols="30" rows="10"  placeholder="Ingresa el texto aquí"></textarea>
+
+        <div class="terminos">
+          <p>Solo letras minúsculas y sin acentos.</p>
+          <img src="" alt="">
+        </div>
+        <div class="botones">
+          <button class="btn-encriptar" type="button" onclick="encriptar()">
+            Encriptar
+          </button>
+          <button class="btn-desencriptar"  onclick="desencriptar()">
+              Desencriptar
+          </button>
+          
+        </div>
+      </main>
+      <div class="encriptado">
+        <img src="img/muñeco.png" alt="" id="muñeco" />
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+          <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+          <p id="parrafo">
+            Ingresa el texto que deseas encriptar o desencriptar
+          </p>
+          <button class="btn-copiar" onclick="copiar()">Copiar Texto Encriptado </button>
+        </div>
+      </div>
+    </div>
+    <footer>Diseñado por Ricardo Talero</footer>
+  </body>
+  <script src="index.js"></script>
+  
+</html>
+  
